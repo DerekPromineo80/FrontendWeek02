@@ -1,0 +1,207 @@
+/* CSS Sheet for Week 2 Assignment */
+/**/ /**/ /**/ /**/ /**/ /**/ /**/ /**/
+/* By Derek McGuire */
+
+
+
+/* Body attributes */
+/* Element Selector */
+/* 1 */
+body {
+    background-color: rgb(189, 243, 126);
+}
+
+/* Body attributes -> New Body */
+/* The use of this selector supercedes the specificty and inheritance of the Element Selector */
+/* Class Selector */
+/* 1.1 */
+.newbody {
+    background-color: rgb(243, 225, 126);
+}
+
+/* Header attributes, for H1 */
+/* Element Selector */
+/* 2 */
+h1 {
+    color:darkblue;
+    margin-left: 33px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Header attributes, for H3 */
+/* Element Selector */
+/* 3 */
+h3 {
+    text-decoration-line: overline underline;
+    margin-left: 33px;
+    font-family: cursive;
+}
+
+/* Header attributes, for H3 */
+/* Element Selector */
+/* 4 */
+h4 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Element Selector */
+/* Paragraph */
+/* 5 */
+p {
+    font-weight: bold;
+}
+
+/* ID Selector, which uses the pound sign (or "Octothorp") */
+/* 5.1 */
+#large-paragraph {
+    font-size: 30px;
+}
+
+/* HYPERLINK FORMATTING */
+/* Element Selector */
+/* Hyperlink Anchors */
+/* 6 */
+a {
+    color: black;
+}
+
+/* Element + Pseudo-class Selector */
+/* unvisited link */
+/* 6.1 */
+a:link {
+    color: rgb(9, 108, 252);
+}
+
+/* Element + Pseudo-class Selector */
+/* visited link */
+/* 6.2 */
+a:visited{
+    color: rgb(125, 70, 180);
+}
+
+/* Element + Pseudo-class Selector */
+/* mouse over link */
+/* 6.3 */
+a:hover{
+    color: rgb(9, 9, 9);
+}
+
+/* Element + Pseudo-class Selector */
+/* selected link */
+/* 6.4 */
+a:active{
+    color: rgba(231, 240, 241, 0.835);
+}
+
+/* IMAGE FORMATTING */
+/* Image Default */
+/* Element Selector */
+/* 7 */
+img {
+    height: 450px;
+    border-color: black;
+    border-style: solid;
+}
+
+/* Resizing Images */
+/* Class Selector */
+/* Used on Homer Simpson page for episode screenshots */
+/* 7.1 */
+.resize {
+    height: 180px;
+}
+
+/* DIV FORMATTING */
+/* Element Selector */
+/* 8 */
+div {
+    /* I commented out below because the .hov class would not work the same */
+    /* background-color:bisque; */
+    border-style: solid;
+    border-color: black;
+    border-width: 14px;
+    border-radius: 3px; /* Changes corners of table, rounds them */
+    margin: 0px; /* How far away from the edge of the page it is */
+    padding: 18px; /* How much space from border to text */
+    width: 63%;
+}
+
+/* Box-Model */
+/* Used with Div */
+/* ID Selector */
+/* 8.1 */
+#box-model {
+    padding: 20px;
+    border-style: solid;
+    border-width: 3px;
+    margin: 15px;
+    background-color: lightblue;
+}
+
+/* UNORDERED LIST FORMATTING */
+/* Element Selector */
+/* 9 */
+ul {
+    margin: 1px;
+    padding: 1px;
+    list-style-type: none;
+}
+
+/* TABLE FORMATTING */
+/* Table element, and everything inside of it */
+/* 10 */
+table {
+    border-collapse: collapse;
+    width: 63%;
+}
+
+/* Hovering over */
+/* Used for TR without TH */
+/* Element Selector */
+/* 11 */
+tr:hover:not(:has(th)) {
+    background-color: gray;
+    color: white;
+}
+
+/* Table Header, Table Data */
+/* Element Selector */
+/* Grouping Selector */
+/* 12, 13 */
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+/* FORM FORMATTING */
+/* Part of the Form: This is the label above where you enter text */
+/* Element Selector */
+/* 14 */
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Part of the Form: This is for the area where you type in text */
+/* Element Selector */
+/* 15 */
+input[type=text]{
+    width: 45%;
+    padding: 3px;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+/* This is for the Submit button */
+/* Element Selector */
+/* 16 */
+input[type=submit] {
+    background-color: yellow;
+    border-color: black;
+    border-style: groove;
+    border-width: 5px;
+    margin: 3px;
+}
